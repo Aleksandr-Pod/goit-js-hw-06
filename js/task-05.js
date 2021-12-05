@@ -3,9 +3,10 @@ const refs = {
     output: document.querySelector("#name-output")
 }
 
-// outputRef.textContent = inputName;
-
 refs.inputName.addEventListener('input', onInputName);
+
 function onInputName(event) {
-    refs.output.textContent = event.currentTarget.value
+    event.currentTarget.value == false ?
+        refs.output.textContent = "Anonymous" :
+        refs.output.textContent = event.currentTarget.value
 }
