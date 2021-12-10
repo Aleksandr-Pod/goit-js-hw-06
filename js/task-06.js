@@ -6,5 +6,7 @@ function onInputCheck(event) {
     inputRef.classList.add("invalid");
     if (event.currentTarget.value.length == dataLength) {
         inputRef.classList.replace("invalid", "valid")
+    } else {
+        inputRef.classList.replace("valid", "invalid");
     }
 }
